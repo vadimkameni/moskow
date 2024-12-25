@@ -1,0 +1,400 @@
+/* Общие стили */
+body {
+    font-size: 18px; /* Увеличенный размер шрифта */
+    font-family: Inter;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Inter;
+    align-items: center;
+    width: 1280px;
+    background-color: #f5f5f5; /* Добавлен фоновый цвет */
+}
+
+.container, .header_wrapper, .footer_wrapper {
+    width: 900px; /* Изменена ширина контейнера */
+    align-items: center;
+    max-width: 100%; /* Для адаптивности */
+    margin: 0 auto; /* Центрирование */
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_wrapper__menu {
+    display: none;
+}
+
+header img {
+    height: 75px; /* Увеличенные размеры изображения */
+    width: 75px;
+    padding-top: 15px;
+    padding-left: 95px;
+}
+
+header a {
+    color: #ff0000; /* Изменен цвет ссылок */
+    text-decoration: none;
+    font-size: 22px; /* Увеличение размера текста */
+    margin-right: 26px;
+}
+
+.log {
+    background-color: #ff0000; /* Изменен цвет кнопки */
+    opacity: 70%;
+    color: #fff;
+    width: 110px; /* Увеличенная ширина кнопки */
+    height: 35px; /* Увеличенная высота кнопки */
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    margin-right: 34px;
+}
+
+.description {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 800; /* Усиленное начертание заголовка */
+    text-align: center;
+    color: #333; /* Темный оттенок серого */
+}
+
+.tour {
+    width: 350px; /* Увеличены размеры изображений туров */
+    height: 250px;
+}
+
+.tours__item {
+    width: 380px; /* Увеличено пространство вокруг элементов */
+    height: 400px;
+    border: 2px solid #ccc; /* Более заметная граница */
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.tours {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); /* Адаптивная сетка */
+    gap: 30px;
+    margin-left: 45px;
+}
+
+.tours__item_price {
+    color: #F44336; /* Яркий красный цвет цен */
+    font-size: 28px;
+}
+
+.tours__item button {
+    width: 150px; /* Увеличена кнопка */
+    height: 47px;
+    background-color: #ff0000; /* Синий цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 27px;
+    margin-top: 17px;
+    margin-left: 130px;
+}
+
+.price {
+    display: flex;
+}
+
+.support_information {
+    display: flex;
+}
+
+.support_information p {
+    margin-right: 60px;
+    margin-left: 35px;
+}
+
+.support button {
+    height: 52px;
+    width: 259px;
+    margin-left: 280px;
+}
+
+input {
+    height: 54px;
+    width: 269px;
+    display: flex;
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+textarea {
+    display: flex;
+    width: 459px;
+    height: 182px;
+    margin-left: 32px;
+}
+
+.forms {
+    display: flex;
+    margin-left: 42px;
+}
+
+footer {
+    margin-top: 65px;
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer_wrapper {
+    margin-left: 38px;
+}
+
+.footer_wrapper img {
+    margin-left: 33px;
+}
+
+.footer_wrapper p {
+    margin-left: 31px;
+}
+
+iframe {
+    margin-left: 112px;
+}
+
+.excursion {
+    font-size: 23px;
+    margin-left: 113px;
+}
+
+
+/* ТУРЫ */
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+    .tours__item {
+        width: 290px;
+        height: 423px;
+    }
+
+    .tour {
+        width: 265px;
+        height: 220px;
+    }
+
+    .price p {
+        font-size: 21px;
+    }
+
+    .tours__item button {
+        margin-left: 82px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 321px) {
+    .container, .footer_wrapper, .header_wrapper {
+        width: 330px;
+    }
+
+    .tours__item {
+        width: 275px;
+        height: 363px;
+    }
+
+    .tour {
+        width: 250px;
+        height: 210px;
+    }
+
+    .price p {
+        font-size: 19px;
+    }
+
+    .tours__item button {
+        margin-left: 81px;
+    }
+
+    .tours {
+        display: grid;
+        grid-template-columns: repeat(1, 390px);
+        gap: 29px;
+        margin-left: 29px;
+    }
+
+    .footer_wrapper img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer_wrapper {
+        display: block;
+        align-items: center;
+    }
+
+    header img {
+        height: 58px;
+        width: 59px;
+        padding-top: 13px;
+        padding-left: 8px;
+    }
+
+    header a {
+        font-size: 15px;
+        margin-right: 11px;
+    }
+
+    .log {
+        display: none;
+    }
+
+    .tours__item button {
+        width: 133px;
+        height: 46px;
+        margin-top: 7px;
+    }
+}
+
+/* ВИДЕО */
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 321px) {
+    .container, .footer_wrapper, .header_wrapper {
+        width: 320px;
+    }
+
+    .footer_wrapper img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer_wrapper {
+        display: block;
+        align-items: center;
+    }
+
+    header img {
+        height: 57px;
+        width: 61px;
+        padding-top: 12px;
+        padding-left: 4px;
+    }
+
+    header a {
+        font-size: 15px;
+        margin-right: 12px;
+    }
+
+    .log {
+        display: none;
+    }
+
+    iframe {
+        width: 261px;
+        height: 172px;
+        margin-left: 39px;
+    }
+
+    .excursion {
+        font-size: 17px;
+        margin-left: 41px;
+    }
+}
+
+/* ОБРАТНАЯ СВЯЗЬ */
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .container {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 321px) {
+    .container, .footer_wrapper, .header_wrapper {
+        width: 320px;
+    }
+
+    .footer_wrapper img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer_wrapper {
+        display: block;
+        align-items: center;
+    }
+
+    header img {
+        height: 56px;
+        width: 62px;
+        padding-top: 11px;
+        padding-left: 5px;
+    }
+
+    header a {
+        font-size: 15px;
+        margin-right: 12px;
+    }
+
+    .log {
+        display: none;
+    }
+
+    input {
+        width: 139px;
+    }
+
+    textarea {
+        width: 131px;
+    }
+
+    .forms {
+        display: flex;
+    }
+
+    .support button {
+        width: 149px;
+        margin-left: 101px;
+    }
+
+    .support_information p {
+        font-size: 15px;
+        margin-right: 0px;
+    }
+}
+
+/* ГЛАВНАЯ */
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .container {
+        width: 710px;
+    }
+
+    .tours__item {
+        width: 281px;
+        height: 413px;
+    }
+
+    .tour {
+        width: 256px;
+        height: 211px;
+    }
+
+    .price p {
+        font-size: 19px;
+    }
+
+    .tours__item button {
+        margin-left: 79px;
+    }
+}
+
+@media screen and (max-width: 766px) and (min-width: 320px) {
+    .banner img {
+        width: 300px;
+    }
+}
